@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    /* color : black; */
+    font-family: Bodoni Moda;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:/* linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),*/ url(./background1.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+.navbar{
+
+ /* border: 1px solid red;  */
+width:85%;
+margin: auto;
+padding:35px,0;
+align-items: center;
+display: flex;
+justify-content: space-between;
+}
+
+.logospace{
+     /* border: 1px solid yellow;  */
+    width: 130px;
+    cursor: pointer;
+    mix-blend-mode: multiply;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    
+    
+}
+
+
+.navbar ul {
+    list-style-type: none;
+     /* border: 1px solid palegreen;  */
+    display: inline-block;
+    display: flex;
+    margin-left: 46%;
+    margin-bottom: 30px;
+    font-size: 20px;
+    /* color: rgb(144, 106, 35); */
+    color: #2f4a7d;
+
+
+
+} 
+.navbar ul li {
+    /* border: 1px solid firebrick;  */
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    /* color: rgb(144, 106, 35); */
+    color: #2f4a7d;
+    text-transform: uppercase;
+
+}
+
+
+
+.navbar ul li::after{
+    content: '';
+    height:3px;
+    width: 0;
+    background: lightcoral;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+} 
+.navbar ul li:hover::after{
+    width:100%; 
+
+} 
+.content{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; */
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+.lines{
+    /* border: 1px solid yellow; */
+    width:85%;
+    margin:auto;
+    padding:110px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+
+color: #2f4a7d;
+    /* color: rgb(144, 106, 35); */
+
+}
+.sen{
+    /* border: 1px solid forestgreen; */
+    margin-right: 500px;
+    align-items:center;
+
+
+}
+
+.sen h1{
+    /* border: 1px solid firebrick; */
+    text-transform: uppercase;
+    padding-top: 50px;
+    font-size: 40px;
+    text-align: left;
+    
+
+} 
+
+ 
+.sen  p{
+    /* border: 1px solid grey; */
+    text-align: left;
+    font-weight: 100;
+    font-size: 20px;
+     line-height: 25px; 
+}
+
+.Watch{
+    width:300px;
+    border-radius:50px;
+
+
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-right: 300px;
+    font-size:25px;
+    
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255,255,255,0.25), rgba(255,255,255,0));
+    transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+.btn:hover::before {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+}
+.btn:hover {
+    background: #555;
+    transform: scale(1.1);
+}
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+
+
+.banner2{
+    width: 100%;
+    height: 100vh;
+    background-image:/* linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),*/ url(./background2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    text-align: center;
+}
+.elements{
+    /* border: 1px solid white; */
+    width:85%;
+padding:35px,0;
+}
+.title{
+    text-transform: uppercase;
+    margin-left: 50%;
+    color: #2b65d0;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.icons{
+    /* border: 1px solid green;  */
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    font-size: large;
+    color: #ec1661;
+    margin-left: 60%;
+    margin-top: 10%;
+    justify-content: center;
+    text-align: center;
+
+
+
+} 
+
+
+
+
+.fa-heart-pulse{
+    font-size: 50px;
+    color: #FF0000;
+}
+.fa-shoe-prints{
+    font-size: 50px;
+    color: #4CAF50;
+}
+.fa-location-arrow{
+    font-size: 50px;
+    color:#2196F3;
+}
+
+.Heart{
+    text-align: left;
+    font-size: 25px;
+}
+.Steps{
+    text-align: left;
+    font-size: 25px;
+}
+
+.Distance{
+    text-align: left;
+    font-size: 25px;
+}
